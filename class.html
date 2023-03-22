@@ -28,6 +28,10 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/weight.css" rel="stylesheet">
+    
+    <!-- js -->
+    <script src="js/weight.js" defer></script>
 </head>
 
 <body>
@@ -274,7 +278,30 @@
         </div>
     </div>
     <!-- Class Timetable Start -->
-    
+
+
+    <!-- BMI Calculation Start -->
+    <div class="container-fluid p-5 bg-dark px-5">
+        <div class="row my-3 text-center"> 
+            <h5 class="text-primary text-uppercase">BMI INDEX</h5>
+            <p></p>
+            <h1 class="display-3 text-secondary mb-0">Calculate Your BMI</h1>
+        </div>
+        <div class="tab-class text-center">
+            <p>Weight In KG:<br>
+                <input type="text" name="" id="weihgt"><br><span id="weight_error"></span>
+            </p>
+            <p>Height In CM:<br>
+                <input type="height" name="" id="height"><br><span id="height_error"></span>
+            </p>
+            <p>Age:<br>
+                <input type="age" name="" id="age"><br><span id="age_error"></span>
+            </p>
+            <button id="btn">Calculate</button>
+            <p id="output"></p>
+        </div>
+    </div>
+    <!-- BMI Calculation End -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-secondary px-5 mt-5">
